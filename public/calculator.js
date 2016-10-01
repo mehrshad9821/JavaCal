@@ -1,16 +1,4 @@
-function expandtable() {
-  $("tr:last").after('<tr>' +
-                      '<td><div class="info"> Activity '+RowNUM+' </div></td>' +
-                      '<td><div class="info"> A'+RowNUM+'</div> </td>' +
-                      '<td><div class="info"><input id = "A'+RowNUM+'weight"class="field" type = "number" name = "A'+RowNUM+'weight" value = " "> </div></td>' +
-                      '<td> <input id="A'+RowNUM+'grade" class="field" type = "number" name = "A'+RowNUM+'grade" value = " " oninput="myFunction2()"> / <input id = "A'+RowNUM+'grade2" class="field" type = "number" name = "A'+RowNUM+'grade" value = " " oninput="myFunction()"> </td>' +
 
-                    '<td><div class="info"><p id="demo'+RowNUM+'"></p></div></td>'+
-                    '<td><div class="info"><p id="letter'+RowNUM+'"></p></div></td>'+
-
-                      '</tr>');
-  RowNUM++;
-}
 
 function lettergrade(answer){
     var grade;
@@ -50,6 +38,18 @@ function lettergrade(answer){
 return grade;
 
 }
+
+function expandtable() {
+  $("tr:last").after('<tr>' +
+                      '<td><div class="info"> Activity '+RowNUM+' </div></td>' +'<td><div class="info"> A'+RowNUM+'</div> </td>' +
+                      '<td><div class="info"><input id = "A'+RowNUM+'weight"class="field" type = "number" name = "A'+RowNUM+'weight" value = " "> </div></td>' +
+                      '<td> <input id="A'+RowNUM+'grade" class="field" type = "number" name = "A'+RowNUM+'grade" value = " " oninput="myFunction2()"> / <input id = "A'+RowNUM+'grade2" class="field" type = "number" name = "A'+RowNUM+'grade" value = " " oninput="myFunction()"> </td>' +'<td><div class="info"><p id="demo'+RowNUM+'"></p></div></td>'+'<td><div class="info"><p id="letter'+RowNUM+'"></p></div></td>'+'</tr>');
+  RowNUM++;
+}
+
+
+
+
 var RowNUM = 5;
 function myFunction(){
     for (i = 1; i < RowNUM; i++){
