@@ -1,3 +1,5 @@
+https://afternoon-mountain-46489.herokuapp.com/calculator.html
+
 # ruby-getting-started
 
 A barebones Rails app, which can easily be deployed to Heroku.
@@ -28,6 +30,8 @@ $ heroku open
 ```
 
 or
+
+https://afternoon-mountain-46489.herokuapp.com/calculator.html
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
